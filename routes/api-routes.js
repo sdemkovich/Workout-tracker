@@ -5,7 +5,7 @@ module.exports = function(app) {
   // Returns all workout documents sorted in an array
   app.get("/api/workouts", (req, res) => {
     db.Workout.find({})
-      .sort([['day', 1]])
+      // .sort([['day', 1]])
       .then(dbWorkout => {
         res.json(dbWorkout);
       })
@@ -19,12 +19,14 @@ module.exports = function(app) {
     db.Workout.updateOne({
       _id: req.params.id
     },{ 
-      $push: { exercises: req.body }
+      $push: { exercises: [req.body] }
     },)
     .then(dbWorkout => {
+      console.log("suscessful")
       res.json(dbWorkout);
     })
     .catch(err => {
+      console.log(err)
       res.json(err);
     });
   });

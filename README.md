@@ -23,7 +23,7 @@ exersises performed and duration.
 * Chart.js
 
 ## Usage
-* Navigate to the [deployed Heroku App](https://https://gentle-brook-43829.herokuapp.com/).
+* Navigate to the [deployed Heroku App](https://gentle-brook-43829.herokuapp.com/).
 * Home page presents the last user's workout. They can choose to contiue this workout by clicking "Continue Workout" 
 to add another exercise or to begin a new one by clicking the "New Workout" button.
 * Select an exercise type: Cardio or Resistance.
@@ -34,7 +34,7 @@ can view their last workout information.
 * Navigate to the dashboard page to view charts representing their workout progress.
 
 ## Finished Product
-View deployed Heroku app [here](https://https://gentle-brook-43829.herokuapp.com/). <br>
+View deployed Heroku app [here](https://gentle-brook-43829.herokuapp.com/). <br>
 View a video of the full application [here](https://drive.google.com/file/d/1XqTCC55GbH0I114fKOVrqhTVmMhPOKVF/view).<br>
 
 ![](/public/images/fitness-tracker.gif)

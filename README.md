@@ -42,4 +42,4 @@ View a video of the full application [here](https://drive.google.com/file/d/1XqT
 ## Questions
 ​If you have any questions about the repo, please contact me:
 
-On GitHub: [sdemkovich-alt](https://github.com/sdemkovich)
+On GitHub: [Svetlana Demkovich](https://github.com/sdemkovich)

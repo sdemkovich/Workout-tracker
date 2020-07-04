@@ -1,7 +1,6 @@
 var path = require("path");
 
-// Routes
-// =============================================================
+// HTML Routes
 module.exports = function(app) {
 
   // index route loads view.html

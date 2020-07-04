@@ -2,10 +2,9 @@ const db = require("../models");
 
 module.exports = function(app) {
 
-  // Returns all workout documents sorted in an array
+  // Returns all workouts
   app.get("/api/workouts", (req, res) => {
     db.Workout.find({})
-      // .sort([['day', 1]])
       .then(dbWorkout => {
         res.json(dbWorkout);
       })
@@ -22,16 +21,14 @@ module.exports = function(app) {
       $push: { exercises: [req.body] }
     },)
     .then(dbWorkout => {
-      console.log("suscessful")
       res.json(dbWorkout);
     })
     .catch(err => {
-      console.log(err)
       res.json(err);
     });
   });
 
-  // Returns a new, empty workout document which will be updated by PUT requests
+  // Returns a new workout
   app.post("/api/workouts/", (req, res) => {
     db.Workout.create({})
     .then(dbWorkout => {
@@ -42,7 +39,7 @@ module.exports = function(app) {
     });
   });
 
-  // Returns all workout documents
+  // Returns all range workouts 
   app.get("/api/workouts/range", (req, res) => {
     db.Workout.find({})
     .then(dbWorkout => {
